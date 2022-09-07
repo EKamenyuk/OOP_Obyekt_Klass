@@ -1,116 +1,110 @@
 fun main(args: Array<String>) {
 
     val post1 = Post(
-        123,
-        12345689,
-        12345689,
+        111,
+        12345,
+        12345,
         111111,
-        1460041200,
+        220820221450,
         "Текст поста",
-        12345689,
-        6765,
+        12345,
+        222,
         true,
-        Comments(123, true, false, false,true),
-        Copyright(23452784, "dfdfdsf","Текст","тип"),
-        Likes(4873, true, true,true),
-        Reposts(23, false),
-        Views(21),
+        Comments(333, true, false, false,true),
+        Likes(444, true, true,true),
+        Reposts(44, false),
+        Views(33),
         "post", //post, copy, reply, postpone, suggest.
-        12786,
+        12121,
         true,
         true,
         false,
         true,
         false,
         false,
-        Donut(true, 223,"placeholder", true, "all"),
         1
     )
     val post2 = Post(
-        234,
-        12345665,
-        12345665,
+        222,
+        12345,
+        12345,
         111111,
-        1460041200,
+        120920221530,
         "Текст поста",
-        12345689,
-        6765,
+        12345,
+        235,
         true,
-        Comments(123, true, false, false,true),
-        Copyright(23452784, "dfdfdsf","Текст","тип"),
-        Likes(4873, true, true,true),
-        Reposts(23, false),
-        Views(21),
+        Comments(255, true, false, false,true),
+        Likes(43, true, true,true),
+        Reposts(13, false),
+        Views(44),
         "post", //post, copy, reply, postpone, suggest.
-        12786,
+        123,
         true,
         true,
         false,
         true,
         false,
         false,
-        Donut(true, 223,"placeholder", true, "all"),
         1
     )
     val post3 = Post(
-        789,
-        12345670,
-        12345555,
+        333,
+        3456,
+        3456,
         111111,
-        1460041200,
+        121212589,
         "Текст поста",
-        12345689,
-        6765,
+        3456,
+        3333,
         false,
-        Comments(123, true, false, false,true),
-        Copyright(23452784, "dfdfdsf","Текст","тип"),
-        Likes(4873, true, true,true),
-        Reposts(23, false),
-        Views(21),
+       Comments(100, true, false, false,true),
+       Likes(5500, true, true,true),
+       Reposts(2000, false),
+       Views(6000),
         "post", //post, copy, reply, postpone, suggest.
-        12786,
+        10900,
         true,
         true,
         false,
         true,
         false,
         false,
-        Donut(true, 223,"placeholder", true, "all"),
+        1
+    )
+    val post4 = Post(
+        4444,
+        4444444,
+        4444444,
+        4444444,
+        110920222015,
+        "Update",
+        404040,
+        444444,
+        true,
+        Comments(44444, true, false, false,true),
+        Likes(555555, true, true,true),
+        Reposts(33333, false),
+        Views(55566666),
+        "post", //post, copy, reply, postpone, suggest.
+        777777,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
         1
     )
 
-    val post4 = Post(
-        2,
-        99999999,
-        99999999,
-        99999999,
-        1460041200,
-        "Update",
-        99999999,
-        99999999,
-        true,
-        Comments(99999999, true, false, false,true),
-        Copyright(99999999, "Update","Update","Update"),
-        Likes(99999999, true, true,true),
-        Reposts(99999999, false),
-        Views(99999999),
-        "post", //post, copy, reply, postpone, suggest.
-        99999999,
-        true,
-        true,
-        false,
-        true,
-        false,
-        false,
-        Donut(true, 99999999,"Update", true, "Update"),
-        1
-    )
 
     WallService.add(post1)
     WallService.add(post2)
+    WallService.add(post3)
+    WallService.add(post4)
 
     WallService.print()
 
-    if (WallService.update(post4)) WallService.print()
-    if (WallService.update(post3)) WallService.print()
+    //if (WallService.update(post4)) WallService.print()
+    //if (WallService.update(post3)) WallService.print()
 }
