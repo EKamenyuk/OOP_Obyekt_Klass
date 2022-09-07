@@ -1,4 +1,4 @@
-un main(args: Array<String>) {
+fun main(args: Array<String>) {
 
     val post1 = Post(
         123,
