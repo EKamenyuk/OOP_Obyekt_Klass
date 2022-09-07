@@ -9,7 +9,6 @@ data class Post(
     val replyPostId : Long,
     val friendsOnly : Boolean,
     val comments : Comments,
-    val copyright : Copyright,
     val likes : Likes,
     val reposts : Reposts,
     val views : Views,
@@ -21,6 +20,5 @@ data class Post(
     val isPinned : Boolean,
     val markedAsAds : Boolean,
     val isFavorite : Boolean,
-    val donut : Donut,
     val postponedId : Long
 )
