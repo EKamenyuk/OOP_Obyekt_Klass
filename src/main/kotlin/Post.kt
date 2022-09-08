@@ -15,9 +15,9 @@ data class Post(
     val postType : String,
     val signerId : Long,
     val canPin : Boolean,
-    val canDelete : Boolean,
+   val canDelete : Boolean,
     val canEdit : Boolean,
-    val isPinned : Boolean,
+   val isPinned : Boolean,
     val markedAsAds : Boolean,
     val isFavorite : Boolean,
     val postponedId : Long
